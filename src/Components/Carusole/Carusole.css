@@ -1,0 +1,142 @@
+/* .carusole-container{
+    position: relative;
+    margin: 1rem 0 2rem 0  ;
+}
+
+
+
+.image img{
+    width: 50%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.carusole-content{
+    display: flex;
+    background-color: aqua;
+    border-radius: 0.6rem;
+    border: 1px solid black;
+    padding: 1.5rem;
+    margin: 0 2rem;
+    gap: 2rem;
+    width: 50%;
+}
+.arrow-right,
+.arrow-left{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: black solid 1.5px;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 55%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.arrow-right span,
+.arrow-left span{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.arrow-right{
+    right: 40%;
+    top: 100%;
+}
+.arrow-left{
+    left: 40%;
+    top: 100%;
+}
+
+.content{
+    width: 30rem;
+    margin: 3rem 3rem;
+} */
+
+
+
+
+/* light up code */
+
+
+.price{
+    position: relative;
+    bottom: -1.5rem;
+    font-weight: 200;
+    padding: 1rem;
+    font-size: 100px;
+}
+.mrp{
+    position: relative;
+    bottom: -3rem;
+    font-weight: 200;
+    padding: 0 0 0 1rem;
+    font-size: x-small;
+}
+:root{
+    --white-color:#fff;
+}
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    transition: 0.3s linear;
+}
+.card-container{
+    position: relative;
+    /* top: 10rem; */
+    padding: 15px 3%;
+    padding-bottom: 100px;
+}
+.card-container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: crimson;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    font-size: 3rem;
+}
+.card-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 0.5rem;
+    row-gap: 1rem;
+
+}
+.card-container .box-container .box{
+    height: 24rem;
+    /* border-radius: 0.6rem; */
+    background: #f3fbff;
+    /* background-color: transparent; */
+    border:none;
+    text-align: start;
+    padding: 3px 2px 3px;
+    /* margin-left: 7%; */
+}
+.card-container .box-container .box img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    background-size: cover;
+}
+.card-container .box-container .box h3{
+    font-size: 1.7rem;
+    padding: 0.9rem 0 0rem 0;
+    
+}
+.card-container .box-container .box p{
+    font-size: 1rem;
+    line-height: 1.8;
+
+}
+.card-container .box-container .box:hover{
+    transform: scale(1.02);
+    border: 0.3px solid black;
+} 
+@media(max-width:425px){
+    .heading{
+        font-size: 2rem;
+    }
+}
